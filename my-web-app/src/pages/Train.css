@@ -1,0 +1,155 @@
+/* Train.css */
+.train-page {
+  width: 100%;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* 分页导航区域 */
+.train-nav-bar {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nav-btn {
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 14px;
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-indicator {
+  font-size: 14px;
+  color: #555;
+  margin: 0 10px;
+}
+
+.jump-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-input {
+  width: 60px;
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+.jump-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: #d0d0ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 卡片容器：自动换行 + 居中对齐 */
+.train-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.train-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* 卡片自动按容器宽度排列，每个占一定百分比 */
+/* 卡片整体样式 */
+.task-card {
+  flex: 1 1 calc(25% - 16px);
+  min-width: 140px;
+  max-width: 240px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+
+/* 悬停效果 */
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 卡片标题 */
+.task-card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 状态标签颜色可控 */
+.task-card p {
+  margin: 4px 0;
+  color: #444;
+}
+
+/* 按钮区域样式优化 */
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* 按钮美化 */
+.task-actions button {
+  font-size: 13px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: #e4e4e4;
+  transition: background-color 0.2s ease;
+}
+
+.task-actions button:hover {
+  background-color: #d2d2d2;
+}
+
+.task-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 手机屏幕下每行2个卡片 */
+@media (max-width: 768px) {
+  .task-card {
+    flex: 1 1 calc(50% - 16px); /* 每行2个 */
+  }
+}
+
+/* 超小屏幕（< 400px）每行1个 */
+/* @media (max-width: 400px) {
+  .task-card {
+    flex: 1 1 100%;
+  }
+} */

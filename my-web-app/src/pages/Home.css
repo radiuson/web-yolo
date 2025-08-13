@@ -1,0 +1,108 @@
+/* Home.css */
+.home-page {
+  width: 100%;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.panel {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.model-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.uploader-model-row {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 间距可调 */
+  margin-bottom: 20px;
+}
+
+.model-select-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.model-select-inline label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.model-select-inline select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.model-select label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.model-select select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-submit,
+.btn-danger {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-submit.disabled,
+.btn-danger.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.image-preview {
+  max-width: 16rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.image-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}

@@ -1,0 +1,122 @@
+.task-detail-page {
+  width: 100vw;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+
+
+/* 容器默认左右布局 */
+.task-detail-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px; /* 左右面板间距 */
+  
+}
+
+.left-panel {
+  flex: 0 1 400px; /* 优先宽度400px，可缩小 */
+  min-width: 360px; /* 设置最小宽度为300px */
+  max-width: 50%; /* 最大不超过50% */
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.right-panel {
+  flex: 1 1 auto; /* 占剩余空间 */
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow-x: auto;     /* 横向出现滚动条 */
+}
+
+/* 窄屏时上下堆叠 */
+@media (max-width: 768px) {
+  .task-detail-container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+}
+
+.preview-area {
+  margin-top: 10px;
+  height: 200px;
+  text-align: center;
+}
+
+/* 按钮容器，放在按钮的父元素上 */
+.button-group {
+  display: flex;
+  justify-content: flex-start; /* 右对齐 */
+  gap: 10px; /* 按钮间距 */
+  margin-top: 20px; /* 和内容的距离 */
+  align-items: stretch; /* 高度一致 */
+}
+
+/* 统一按钮样式 */
+.button-group button {
+  height: 40px; /* 固定高度，确保一致 */
+  padding: 0 15px; /* 内边距 */
+  font-size: 14px; /* 字体大小 */
+  line-height: 40px; /* 让文字垂直居中 */
+  display: inline-block; /* 保持内容自适应 */
+  box-sizing: border-box; /* 包含内边距 */
+}
+
+
+.augmentation-section-box {
+  border: 1px solid #ccc;
+  margin-top: 24px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.augmentation-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.augmentation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .left-panel,
+  .right-panel {
+    flex: 1 1 100%; /* 让两边都占满宽度，堆叠显示 */
+  }
+}

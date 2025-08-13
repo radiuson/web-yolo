@@ -1,0 +1,22 @@
+/* AugmentationButton.css */
+
+.augmentation-btn {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.augmentation-btn:hover {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+.augmentation-btn.confirmed {
+  background-color: #444; /* 或任意更深的颜色 */
+  color: #fff;
+  border: 1px solid #222;
+}

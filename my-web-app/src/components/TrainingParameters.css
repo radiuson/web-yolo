@@ -1,0 +1,20 @@
+.parameter-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  display: inline-block;
+  /* 你也可以根据需要调整宽度，比如 width: 100%; */
+}
+
+.parameter-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  margin-bottom: 12px; /* 适当间距 */
+}

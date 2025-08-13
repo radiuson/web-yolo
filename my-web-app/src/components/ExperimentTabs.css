@@ -1,0 +1,27 @@
+/* ExperimentTabs.css */
+.full-width-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs-container {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  max-width: 120px; /* 限制宽度 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-item.active {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #007bff;
+}
